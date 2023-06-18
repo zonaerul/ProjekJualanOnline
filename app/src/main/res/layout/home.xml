@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeFragment">
+    <LinearLayout
+        android:layout_below="@id/toolbarmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="NotSibling">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@raw/image_laptop"
+            android:scaleType="fitXY"
+            android:id="@+id/imagemain"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <GridView
+                android:id="@+id/acgridmain"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elektronik"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/orange"/>
+
+            <GridView
+                android:id="@+id/gridmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="1"
+                android:scrollbars="none">
+
+            </GridView>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
